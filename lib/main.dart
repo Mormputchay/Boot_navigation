@@ -1,4 +1,4 @@
-import 'package:boot_navigation/view/Main_Tab.dart';
+import 'package:boot_navigation/view/Carousel_Silder_Screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MainTab(),
+      home: const CarouselSliderScreen(),
     );
   }
 }
