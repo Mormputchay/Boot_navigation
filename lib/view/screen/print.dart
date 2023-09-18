@@ -44,7 +44,7 @@ class BasicTileWidget extends StatelessWidget {
       );
     } else {
       return Container(
-        margin: EdgeInsets.all(16),
+        margin: const EdgeInsets.all(16),
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: const BorderRadius.all(Radius.circular(8)),

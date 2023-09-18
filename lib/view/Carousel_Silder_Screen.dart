@@ -44,10 +44,6 @@ class _CarouselSliderScreenState extends State<CarouselSliderScreen> {
                     height: 400,
                     viewportFraction: 1,
                     initialPage: 0,
-                    //pageSnapping: true,
-                    //enableInfiniteScroll: false,
-                    //enlargeCenterPage: true,
-                    //enlargeStrategy: CenterPageEnlargeStrategy.height,
                     reverse: true,
                     autoPlayInterval: const Duration(seconds: 2),
                     onPageChanged: (index, reason) {
@@ -64,7 +60,7 @@ class _CarouselSliderScreenState extends State<CarouselSliderScreen> {
                 ElevatedButton.icon(
                     onPressed: () {
                       controller.previousPage(
-                          duration: const Duration(microseconds: 500));
+                          duration: const Duration(milliseconds: 500));
                     },
                     icon: const Icon(Icons.arrow_back),
                     label: const Text("previous")),
@@ -72,7 +68,7 @@ class _CarouselSliderScreenState extends State<CarouselSliderScreen> {
                 ElevatedButton.icon(
                     onPressed: () {
                       controller.nextPage(
-                          duration: const Duration(microseconds: 500));
+                          duration: const Duration(milliseconds: 500));
                     },
                     icon: const Icon(Icons.arrow_forward),
                     label: const Text("Next")),
