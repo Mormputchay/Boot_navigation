@@ -1,3 +1,4 @@
+import 'package:boot_navigation/view/emoji_picker.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
@@ -44,7 +45,11 @@ class _CarouselSliderScreenState extends State<CarouselSliderScreen> {
                     height: 400,
                     viewportFraction: 1,
                     initialPage: 0,
-                    reverse: true,
+                    autoPlay: false,
+                    aspectRatio: 16 / 9,
+                    enableInfiniteScroll: true,
+                    animateToClosest: true,
+                    reverse: false,
                     autoPlayInterval: const Duration(seconds: 2),
                     onPageChanged: (index, reason) {
                       setState(() {
@@ -74,6 +79,15 @@ class _CarouselSliderScreenState extends State<CarouselSliderScreen> {
                     label: const Text("Next")),
               ],
             ),
+            const SizedBox(height: 10),
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const MyEmojiPicker()));
+                },
+                child: const Text("Emoji")),
           ],
         ),
       ),
