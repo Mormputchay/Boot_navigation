@@ -1,4 +1,4 @@
-import 'package:boot_navigation/view/Carousel_Silder_Screen.dart';
+import 'package:boot_navigation/view/homework/Carousel_Silder_Screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
