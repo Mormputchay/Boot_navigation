@@ -14,7 +14,6 @@ class _BuilderApiScreenState extends State<BuilderApiScreen> {
     var url = Uri.parse("https://jsonplaceholder.typicode.com/posts");
     final response = await http.get(url);
     final data = jsonDecode(response.body);
-    print(data);
     return data;
   }
 

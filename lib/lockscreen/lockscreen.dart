@@ -1,4 +1,4 @@
-import 'package:boot_navigation/buildApi.dart';
+import 'package:boot_navigation/buildApi2.dart';
 import 'package:flutter/material.dart';
 
 import 'comm_widget/PinLockScreen.dart';
@@ -32,7 +32,7 @@ class _LockScreenState extends State<LockScreen> {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => const BuilderApiScreen()));
+                        builder: (context) => const BuildAPI2Screen()));
               },
               onPinChanged: (pin) {},
               disableDotColor: Colors.black26,
