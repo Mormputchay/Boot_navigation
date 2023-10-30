@@ -1,9 +1,8 @@
-import 'package:boot_navigation/lockscreen/lockscreen.dart';
+import 'package:boot_navigation/Auth_In_API/qrcodeScreen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-
   runApp(const MyApp());
 }
 
@@ -13,9 +12,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.pink, primaryColor: Colors.amber),
-      home: const LockScreen(),
+      home: const QRCodeScreen(),
     );
   }
 }
