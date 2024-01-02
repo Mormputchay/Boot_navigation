@@ -1,8 +1,10 @@
-import 'package:boot_navigation/Auth_In_API/qrcodeScreen.dart';
+import 'package:boot_navigation/lockscreen/lockscreen.dart';
 import 'package:flutter/material.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
+  MobileAds.instance.initialize();
   runApp(const MyApp());
 }
 
@@ -13,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(primarySwatch: Colors.pink, primaryColor: Colors.amber),
-      home: const QRCodeScreen(),
+      home: const LockScreen(),
     );
   }
 }

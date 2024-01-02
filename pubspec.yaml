@@ -49,6 +49,13 @@ dependencies:
   image_picker: ^1.0.4
   simple_barcode_scanner: ^0.0.8
   flutter_barcode_scanner: ^2.0.0
+  google_mobile_ads: ^4.0.0
+  webview_flutter_android: ^3.3.1
+  webview_flutter_wkwebview: ^3.1.1
+  webview_flutter: ^4.0.5
+  facebook_audience_network: ^1.0.1
+  youtube_player_flutter: ^8.1.2
+  shimmer: ^3.0.0
 
 dev_dependencies:
   flutter_test:
